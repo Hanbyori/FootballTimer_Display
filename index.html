@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ManualControl</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="ManualControl.css"/>
+<script id="applicationScript" type="text/javascript" src="ManualControl.js"></script>
+</head>
+<body>
+<div id="Debug">
+	디버그 메세지
+</div>
+<div id="Design">
+    <svg class="n_8">
+		<rect id="n_8" rx="10" ry="10" x="0" y="0" width="437" height="68">
+		</rect>
+	</svg>
+	<svg class="n_5">
+		<rect id="n_5" rx="10" ry="10" x="0" y="0" width="157" height="52">
+		</rect>
+	</svg>
+	<svg class="n_1" viewBox="0 0 381 86" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop id="homeGradient1" offset="40%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                <stop id="homeGradient2" offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+            </linearGradient>
+            <pattern id="image-pattern" x="0" y="0" width="1" height="1">
+                <image id="homeTeam-image" href="" class="svg-image"/>
+            </pattern>
+        </defs>
+		<path d="M 30 0 L 351 0 C 367.5685424804688 0 381 13.43145751953125 381 30 L 381 56 C 381 72.56854248046875 367.5685424804688 86 351 86 L 30 86 C 13.43145751953125 86 0 72.56854248046875 0 56 L 0 30 C 0 13.43145751953125 13.43145751953125 0 30 0 Z" fill="url(#gradient1)"/>
+		<path d="M 30 0 L 351 0 C 367.5685424804688 0 381 13.43145751953125 381 30 L 381 56 C 381 72.56854248046875 367.5685424804688 86 351 86 L 30 86 C 13.43145751953125 86 0 72.56854248046875 0 56 L 0 30 C 0 13.43145751953125 13.43145751953125 0 30 0 Z" fill="url(#image-pattern)" opacity="0.5"/>
+	</svg>
+	<div id="n_">
+		<span>1</span>
+	</div>
+	<svg class="n_2" viewBox="0 0 381 86" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<linearGradient id="gradient2" x1="100%" y1="0%" x2="0%" y2="0%">
+				<stop id="awayGradient1" offset="40%" style="stop-color:rgb(0,255,255);stop-opacity:1" />
+				<stop id="awayGradient2" offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+			</linearGradient>
+			<pattern id="image-pattern-n2" x="0" y="0" width="1" height="1">
+				<image id="awayTeam-image" href="" class="svg-image"/>
+			</pattern>
+		</defs>
+		<rect rx="30" ry="30" x="0" y="0" width="381" height="86" fill="url(#gradient2)"/>
+		<rect rx="30" ry="30" x="0" y="0" width="381" height="86" fill="url(#image-pattern-n2)" opacity="0.5"/>
+	</svg>
+	<div id="n__k">
+		<span>5</span>
+	</div>
+	<div id="n_0">
+		<span>+10</span>
+	</div>
+	<svg class="n_4">
+		<rect id="n_4" rx="10" ry="10" x="0" y="0" width="177" height="52">
+		</rect>
+	</svg>
+	<div id="n_633">
+		<span>99:99</span>
+	</div>
+	<svg class="n_3" viewBox="0 0 381 86">
+		<path id="n_3" d="M 30 0 L 351 0 C 367.5685424804688 0 381 13.43145751953125 381 30 L 381 56 C 381 72.56854248046875 367.5685424804688 86 351 86 L 30 86 C 13.43145751953125 86 0 72.56854248046875 0 56 L 0 30 C 0 13.43145751953125 13.43145751953125 0 30 0 Z">
+		</path>
+	</svg>
+	<div id="home__q">
+		<span>홈 팀</span>
+	</div>
+	<svg class="n_7">
+		<rect id="n_7" rx="30" ry="30" x="0" y="0" width="381" height="86">
+		</rect>
+	</svg>
+	<div id="away__q">
+		<span>어웨이 팀</span>
+	</div>
+    <div id="title">
+		<span>FA컵 라운드 4</span>
+	</div>
+	<img id="n_n" src="./image/logo.png">
+    <div id = "score1">
+        <button onclick="scoreBtn(true, 1)">+1</button>
+        <button onclick="scoreBtn(true, -1)">-1</button>
+    </div>
+    <div id = "score2">
+        <button onclick="scoreBtn(false, 1)">+1</button>
+        <button onclick="scoreBtn(false, -1)">-1</button>
+    </div>
+    <div id="form1">
+        <div>
+            매치 찾기 : <input id="temaInput" type="text" placeholder="팀 이름 입력" />
+            <button onclick="searchMatchBtn()">찾기</button>
+        </div>
+        <div>
+            타이틀 변경 : <input id="titleInput" type="text" placeholder="타이틀 입력" />
+            <button onclick="titleBtn()">변경</button>
+        </div>
+        <br>
+        <div>
+            홈 팀 정보 설정
+        </div>
+        <div>
+            이름 변경 : <input id="homeName" type="text" placeholder="바꿀 이름" />
+            <button onclick="nameBtn(true)">설정</button>
+        </div>
+        <div>
+            색 변경 : 
+            <input class="inputColor" id="homeColor1" type="color"/>
+            <input class="inputColor" id="homeColor2" type="color"/>
+            <input class="inputColor" id="homeColor3" type="color"/>
+            <button onclick="colorBtn(true)">설정</button>
+        </div>
+        <br>
+        <div>
+            어웨이 팀 정보 설정
+        </div>
+        <div>
+            이름 변경 : <input id="awayName" type="text" placeholder="바꿀 이름" />
+            <button onclick="nameBtn(false)">설정</button>
+        </div>
+        <div>
+            색 변경 : 
+            <input class="inputColor" id="awayColor1" type="color"/>
+            <input class="inputColor" id="awayColor2" type="color"/>
+            <input class="inputColor" id="awayColor3" type="color"/>
+            <button onclick="colorBtn(false)">설정</button>
+        </div>
+    </div>
+    <div id="form2">
+        <div>
+            풀타임 컨트롤
+            <button onclick="BeginMatch()">경기전</button>
+        </div>
+        <div>
+            <button onclick="timerStartBtn(0, 0)">경기시작</button>
+            <button onclick="halfTimeBtn()">전반종료</button>
+            <button onclick="timerStartBtn(45, 0)">후반시작</button>
+            <button onclick="fullTimeBtn()">후반종료</button>
+            <button onclick="matchEndBtn()">경기종료</button>
+        </div>
+        <div>
+            연장전 컨트롤
+        </div>
+        <div>
+            <button onclick="timerStartBtn(90, 0)">연장시작</button>
+            <button onclick="halfTimeBtn()">전반종료</button>
+            <button onclick="timerStartBtn(105, 0)">후반시작</button>
+            <button onclick="penaltyBtn()">승부차기</button>
+            <button onclick="matchEndBtn()">경기종료</button>
+        </div>
+        <div>
+            승부차기 컨트롤
+        </div>
+        <div>
+            <button onclick="ptScoreBtn(true, 1)">홈+1</button>
+            <button onclick="ptScoreBtn(true, -1)">홈-1</button>
+            <button onclick="ptScoreBtn(false, 1)">어웨이+1</button>
+            <button onclick="ptScoreBtn(false, -1)">어웨이-1</button>
+            <button onclick="ptScoreResetBtn()">리셋</button>
+            <button onclick="matchEndBtn()">경기종료</button>
+        </div>
+        <br>
+        <div>
+            추가 시간 : <input id="addedTimeInput" type="text" placeholder="분" />
+            <button onclick="addedTimeBtn()">추가</button>
+        </div>
+        <div>
+            타이머 직접 입력 : <input id="setMinInput" type="text" placeholder="분" /> <input id="setSecInput" type="text" placeholder="초" />
+            <button onclick="setTimeBtn()">설정</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
