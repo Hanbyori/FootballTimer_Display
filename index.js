@@ -1,4 +1,4 @@
-const proxyURL = "https://bgo7jtdovk.execute-api.us-east-1.amazonaws.com/";
+const proxyURL = "https://bgo7jtdovk.execute-api.us-east-1.amazonaws.com/UBomNyang_FootballTimer/";
 const apiURL = "https://www.fotmob.com/api/";
 
 var matchID;
