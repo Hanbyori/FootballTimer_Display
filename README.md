@@ -3,4 +3,4 @@
 
 **OBS 브라우저 소스 웹페이지 리포**
 
-**Lambda에서 1초 주기 API 호출 -> API 게이트웨이 -> DynamoDB 정보 요청 -> 출력**
+**JS에서 1초주기 API 호출 -> Lambda API 게이트웨이 -> DynamoDB 정보 요청 -> 출력**
