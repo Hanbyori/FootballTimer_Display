@@ -1,8 +1,5 @@
 const proxyURL = "https://e1n19tllva.execute-api.us-east-1.amazonaws.com/dev/";
 
-var min = 0;
-var sec = 0;
-
 var statusElement;
 var addedTimeIcon;
 var addedTimeElement;
@@ -70,9 +67,6 @@ function initializeContent() {
         document.documentElement.style.setProperty('--awayTextColor', statusData.awayTeam.away_textColor);
         awayScoreElement.innerHTML = statusData.gameInfo.away_score;
         titleElement.innerHTML = statusData.gameInfo.title;
-
-        min = statusData.gameInfo.min;
-        sec = statusData.gameInfo.sec;
     }
 }
 
